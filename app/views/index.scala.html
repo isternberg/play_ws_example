@@ -1,0 +1,10 @@
+@import java.util
+
+@(populationList: util.List[Integer])
+
+@main("Welcome to Play") {
+  Population in Israel today: @populationList.get(0) <br>
+  Population in Israel tomorrow: @populationList.get(1) <br>
+  Difference: @populationList.get(2)
+
+}
