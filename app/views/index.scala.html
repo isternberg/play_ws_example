@@ -1,10 +1,9 @@
-@import java.util
-
-@(populationList: util.List[Integer])
+@import data.PopulationTodayAndTomorrow
+@(populationList: PopulationTodayAndTomorrow)
 
 @main("Welcome to Play") {
-  Population in Israel today: @populationList.get(0) <br>
-  Population in Israel tomorrow: @populationList.get(1) <br>
-  Difference: @populationList.get(2)
+  Population in Israel today: @populationList.total_population.get(0).population <br>
+  Population in Israel tomorrow: @populationList.total_population.get(1).population <br>
+  @*Difference: @populationList.get(2)*@
 
 }

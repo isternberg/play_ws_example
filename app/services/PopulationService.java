@@ -1,9 +1,9 @@
 package services;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.google.inject.ImplementedBy;
+import data.PopulationTodayAndTomorrow;
 
 @ImplementedBy(RestPopulationService.class)
 public interface PopulationService {
-    public JsonNode getPopulationData(String url);
+     PopulationTodayAndTomorrow getPopulationData(String url);
 }
