@@ -1,4 +1,1 @@
-This is your new Play application
-=================================
-
-This file will be packaged with your application, when using `activator dist`.
+A Simple Example for using a Rest API with The Play Framework and Jackson.
